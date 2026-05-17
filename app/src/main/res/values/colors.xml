@@ -1,0 +1,30 @@
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- TaskMate Colors -->
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent">#FF9800</color>
+    <color name="accent2">#4CAF50</color>
+
+    <!-- Theme Colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <!-- Button Colors -->
+    <color name="button_add">#4CAF50</color>        <!-- Green -->
+    <color name="button_voice">#FF5722</color>      <!-- Deep Orange -->
+    <color name="button_analytics">#9C27B0</color>  <!-- Purple -->
+    <color name="button_theme">#607D8B</color>      <!-- Blue Grey -->
+
+    <!-- Date/Time Picker Colors -->
+    <color name="date_picker_bg">#E3F2FD</color>
+    <color name="time_picker_bg">#FFF3E0</color>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Tasks"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorPrimary" />
+
+    <!-- Priority Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbFilterHigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High Priority"
+        android:textSize="14sp"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbFilterMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Priority"
+        android:textSize="14sp"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbFilterLow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Low Priority"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Completion Status Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completion Status"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbFilterCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completed Tasks"
+        android:textSize="14sp"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbFilterNotCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Completed Tasks"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnApplyFilter"
+            style="@style/DialogButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Apply Filter"
+            android:background="@drawable/save_button_background"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnClearFilter"
+            style="@style/DialogButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:background="@drawable/delete_button_background"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

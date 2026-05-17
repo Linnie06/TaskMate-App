@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Task"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task title"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description (optional)"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Date and Time Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Due Date &amp; Time (Optional)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            style="@style/DialogButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:background="@drawable/date_button_background"
+            android:textColor="@color/white"
+            android:layout_marginEnd="4dp"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawablePadding="8dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnSelectTime"
+            style="@style/DialogButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:background="@drawable/time_button_background"
+            android:textColor="@color/white"
+            android:layout_marginStart="4dp"
+            android:drawableLeft="@drawable/ic_time"
+            android:drawablePadding="8dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Display selected date and time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="No date selected"
+            android:textSize="14sp"
+            android:textColor="@color/purple_700"
+            android:background="@color/date_picker_bg"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/tvSelectedTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="No time selected"
+            android:textSize="14sp"
+            android:textColor="@color/purple_700"
+            android:background="@color/time_picker_bg"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        style="@style/DialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Task"
+        android:background="@drawable/save_button_background"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
